@@ -61,6 +61,7 @@
             </p>
             </a>
         </li>
+        @can('create',App\Buku::class)
         
         <li class="nav-header">DATA MASTER</li>
         <li class="nav-item">
@@ -71,6 +72,7 @@
             </p>
             </a>
         </li>
+        @endcan
         <li class="nav-item">
             <a href="/peminjaman" class="nav-link">
             <i class="nav-icon fas fa-chart-pie"></i>

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('kode')->unique();
             $table->string('tgl_pinjam');
             $table->string('tgl_kembali');
-            $table->date('status');
+            $table->string('status');
 
             $table->timestamps();
         });

@@ -39,25 +39,25 @@
             <form class="form-horizontal" action="/peminjaman/{{$peminjaman->id}}" method="POST">
                 @csrf
                 @method('PUT')
-                <div class="form-group row">
+                {{-- <div class="form-group row">
                   <label for="inputPassword3" class="col-sm-2 col-form-label">Judul</label>
-                  <div class="col-sm-10">
+                  <div class="col-sm-10"> --}}
                     {{-- <input type="text" class="form-control" id="inputPassword3" name="nama"> --}}
-                    <select name="judul" class="form-control" id="">
+                    {{-- <select name="judul" class="form-control" id="">
                       <option value="">-Pilih Judul-</option>
                       @foreach ($buku as $item)
                         <option value="{{$item->id}}" {{$peminjaman->juduls_id==$item->id ? 'selected' : ''}}>{{$item->judul}}</option>
-                      @endforeach
-                      
+                      @endforeach --}}
+{{--                       
                     </select>
-                  </div>
-                </div>
+                  </div> --}}
+                {{-- </div>
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Kode</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="inputPassword3" value="{{$peminjaman->kode}}" name="kode">
                     </div>
-                  </div>
+                  </div> --}}
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Tanggal Pinjam</label>
                     <div class="col-sm-10">
@@ -71,9 +71,9 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Stok</label>
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Status</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputPassword3" value="{{$peminjaman->stok}}" name="stok">
+                      <input type="text" class="form-control" id="inputPassword3" value="{{$peminjaman->status}}" name="status">
                     </div>
                   </div>
                   

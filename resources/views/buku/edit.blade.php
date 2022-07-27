@@ -49,46 +49,45 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Judul</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="{{$judul->judul}}" id="inputPassword3" name="judul">
+                      <input type="text" class="form-control" value="{{$buku->judul}}" id="inputPassword3" name="judul">
                     </div>
                   </div>
-                </div>
-                <div class="card-body">
+
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Pengarang</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" value="{{$buku->pengarang}}" id="inputEmail3" name="pengarang">
                     </div>
                   </div>
-                  <div class="card-body">
+
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Halaman</label>
                       <div class="col-sm-10">
                         <input type="text" class="form-control" value="{{$buku->halaman}}" id="inputEmail3" name="halaman">
                       </div>
                     </div>
-                    <div class="card-body">
+
                       <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Penerbit</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" value="{{$buku->penerbit}}" id="inputEmail3" name="penerbit">
                         </div>
                       </div>
-                      <div class="card-body">
+
                         <div class="form-group row">
                           <label for="inputEmail3" class="col-sm-2 col-form-label">Tahun Terbit</label>
                           <div class="col-sm-10">
                             <input type="text" class="form-control" value="{{$buku->tahun}}" id="inputEmail3" name="tahun">
                           </div>
                         </div>
-                        <div class="card-body">
+
                           <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Stok</label>
                             <div class="col-sm-10">
                               <input type="text" class="form-control" value="{{$buku->stok}}" id="inputEmail3" name="stok">
                             </div>
                           </div>
-                          <div class="card-body">
+                            
                             <div class="form-group row">
                               <label for="inputEmail3" class="col-sm-2 col-form-label">Status</label>
                               <div class="col-sm-10">

@@ -26,9 +26,9 @@
     <div class="card">
         <div class="card-header">
             {{-- @can('update', $user) --}}
-           
+            @can('create',App\Buku::class)
         <a href="/buku/form" class="btn btn-primary">Tambah Data</a>
-             
+        @endcan
         {{-- @endcan --}}
 
         <div class="card-tools">

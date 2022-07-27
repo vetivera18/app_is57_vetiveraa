@@ -93,8 +93,8 @@ class PeminjamanController extends Controller
     {
         $peminjaman = Peminjaman :: find($id);
 
-        $peminjaman-> juduls_id = $request-> judul;
-        $peminjaman-> kode = $request-> kode ; 
+        // $peminjaman-> juduls_id = $request-> judul;
+        // $peminjaman-> kode = $request-> kode ; 
         $peminjaman-> tgl_pinjam= $request-> tgl_pinjam; 
         $peminjaman-> tgl_kembali= $request-> tgl_kembali ; 
         $peminjaman->  status= $request-> status; 

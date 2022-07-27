@@ -45,7 +45,7 @@
                     <th>KODE</th>
                     <th>TANGGAL PINJAM</th>
                     <th>TANGGAL KEMBALI</th>
-                    <th>STOK</th>
+                    <th>STATUS</th>
                     <th>ACTION</th>
                     </tr>
                 </thead>
@@ -53,10 +53,11 @@
                     @forelse ($peminjaman as $item)
                     <tr>
                         <td>{{$nomor++}}</td>
-                        <td>{{$item->juduls->judul}}</td>
+                        <td>{{$item->bukus->judul}}</td>
                         <td>{{$item->kode}}</td>
                         <td>{{$item->tgl_pinjam}}</td>
                         <td>{{$item->tgl_kembali}}</td>
+                        <td>{{$item->status}}</td>
                         
                         <td>
                             <a href="/peminjaman/edit/{{$item->id}}" class="btn btn-sm text-white btn-info"><i class="fa fa-pencil-alt"></i></a>

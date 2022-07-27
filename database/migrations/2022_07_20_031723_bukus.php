@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('bukus', function (Blueprint $table) {
             $table->id();
             $table->string('kode')->unique();
-            $table->bigInteger('judul');
+            $table->string('judul');
             $table->string('pengarang');
             $table->string('halaman');
             $table->string('penerbit');
